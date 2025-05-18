@@ -1,0 +1,19 @@
+1. **Spell Rotation Logic Updated**  
+   - The main spell casting loop in `main.lua` was updated to match the optimal Lightning Spear build from Mobalytics:  
+     - Prioritizes Ball Lightning, Lightning Spear, Unstable Currents, Ice Blades, Fireball, and defensive spells.
+     - Implements logic to cast Ball Lightning until enough Crackling Energies are generated, then casts Lightning Spear, and uses Unstable Currents and other key spells as described.
+
+2. **New Spell Priority File**  
+   - Created/updated `spell_priority.lua` in the sorcerer folder to reflect the new optimal spell order for the Lightning Spear build.
+
+3. **Utility and Targeting Logic Updated**  
+   - `my_utility/my_utility.lua`, `my_utility/my_target_selector.lua`, and `my_utility/spell_data.lua` were updated to the latest versions from the Necro build, ensuring all utility and targeting functions are current.
+
+4. **Preserved All Sorcerer Spells**  
+   - No changes were made to the contents of the `spells/` folder; all existing sorcerer spells remain intact.
+
+5. **Menu Logic Checked**  
+   - `menu.lua` was reviewed to ensure compatibility with the updated logic and settings.
+
+**Summary:**  
+The sorcerer build now uses the latest core logic and utilities, with a spell rotation and priority order optimized for the Lightning Spear build, while keeping all your original sorcerer spells.
