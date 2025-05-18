@@ -527,7 +527,7 @@ on_update(function ()
                 end
             elseif spell_name == "unstable_current" then
                 -- Activate Unstable Currents if not active
-                if not my_utility.is_unstable_current_active() then
+                if my_utility.is_unstable_current_active and not my_utility.is_unstable_current_active() then
                     if spell.logics() then
                         cast_end_time = current_time + 0.2;
                         return;
